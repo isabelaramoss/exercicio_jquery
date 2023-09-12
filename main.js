@@ -5,11 +5,13 @@ $(document).ready(function(){
     let lista = $('.lista');
     let item = `<li>${tarefa}</li>`
 
-    $(item).appendTo(lista)
+    lista.append(item);
+
+    $('input').val('');
   });
 
-  $('ul').on('click','li',function(){
+  $('ul.lista').on('click','li',function(){
     $(this).addClass('concluido');
   });
 
-})
+});
