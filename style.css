@@ -49,6 +49,13 @@ form button:hover {
   color: black;
 }
 
+ul{
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+
 li {
   color: black;
 }
